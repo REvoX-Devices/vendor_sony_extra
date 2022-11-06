@@ -15,7 +15,6 @@
 # limitations under the License.
 #
 
-
 # Camera For Sagami
 PRODUCT_PACKAGES += \
     PhotoPro \
@@ -25,17 +24,14 @@ PRODUCT_PACKAGES += \
     CreativeEffect \
     PortraitSelfie
 
-
 # Dolby Atmos
 PRODUCT_PACKAGES += \
     daxService \
     daxUI
-    
 
 # Dolby Atmos
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/dolby/framework/dolby_dax.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/dolby_dax.jar
-
 
 # SonyFramework
 PRODUCT_COPY_FILES += \
@@ -44,7 +40,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.album.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.jar \
     $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.album.internal.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.internal.jar \
     $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.home.resourceprovider.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.home.resourceprovider.jar
-
 
 # SonyFramework Permissions
 PRODUCT_COPY_FILES += \
