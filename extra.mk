@@ -39,18 +39,18 @@ PRODUCT_COPY_FILES += \
 
 # SonyFramework
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sonyframework/system/framework/com.sony.device.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sony.device.jar \
-    $(LOCAL_PATH)/sonyframework/system/framework/com.sonyericsson.colorextraction_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonyericsson.colorextraction_impl.jar \
-    $(LOCAL_PATH)/sonyframework/system/framework/com.sonymobile.album.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.jar \
-    $(LOCAL_PATH)/sonyframework/system/framework/com.sonymobile.album.internal.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.internal.jar \
-    $(LOCAL_PATH)/sonyframework/system/framework/com.sonymobile.home.resourceprovider.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.home.resourceprovider.jar
+    $(LOCAL_PATH)/sonyframework/framework/com.sony.device.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sony.device.jar \
+    $(LOCAL_PATH)/sonyframework/framework/com.sonyericsson.colorextraction_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonyericsson.colorextraction_impl.jar \
+    $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.album.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.jar \
+    $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.album.internal.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.internal.jar \
+    $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.home.resourceprovider.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.home.resourceprovider.jar
 
 
 # SonyFramework Permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sonyframework/system/etc/permissions/com.sony.device.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sony.device.xml \
-    $(LOCAL_PATH)/sonyframework/system/etc/permissions/privapp-permissions-sony.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-sony.xml\
-    $(LOCAL_PATH)/sonyframework/system/etc/permissions/com.sonyericsson.colorextraction.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonyericsson.colorextraction.xml \
-    $(LOCAL_PATH)/sonyframework/system/etc/permissions/com.sonymobile.home.resourceprovider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.home.resourceprovider.xml \
-    $(LOCAL_PATH)/sonyframework/system/etc/permissions/com.sonymobile.album.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.xml \
-    $(LOCAL_PATH)/sonyframework/system/etc/permissions/com.sonymobile.album.internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.internal.xml
+    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sony.device.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sony.device.xml \
+    $(LOCAL_PATH)/sonyframework/etc/permissions/privapp-permissions-sony.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-sony.xml\
+    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonyericsson.colorextraction.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonyericsson.colorextraction.xml \
+    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.home.resourceprovider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.home.resourceprovider.xml \
+    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.xml \
+    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.internal.xml
