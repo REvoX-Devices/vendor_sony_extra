@@ -49,3 +49,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.home.resourceprovider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.home.resourceprovider.xml \
     $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.xml \
     $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.internal.xml
+
+# Controller Support
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/system/usr/keylayout)
