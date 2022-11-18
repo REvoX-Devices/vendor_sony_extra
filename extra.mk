@@ -15,31 +15,14 @@
 # limitations under the License.
 #
 
-# Camera For Sagami
-PRODUCT_PACKAGES += \
-    PhotoPro \
-    CinemaPro \
-    VideoPro \
-    CameraPanorama \
-    CreativeEffect \
-    PortraitSelfie
-
-# Dolby Atmos
-PRODUCT_PACKAGES += \
-    daxService \
-    daxUI
-
-# Dolby Atmos
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dolby/framework/dolby_dax.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/dolby_dax.jar
-
 # SonyFramework
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sonyframework/framework/com.sony.device.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sony.device.jar \
     $(LOCAL_PATH)/sonyframework/framework/com.sonyericsson.colorextraction_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonyericsson.colorextraction_impl.jar \
     $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.album.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.jar \
     $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.album.internal.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.internal.jar \
-    $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.home.resourceprovider.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.home.resourceprovider.jar
+    $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.home.resourceprovider.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.home.resourceprovider.jar \
+    $(LOCAL_PATH)/sonyframework/framework/somc-ext-mmwdiapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/somc-ext-mmwdiapi.jar
 
 # SonyFramework Permissions
 PRODUCT_COPY_FILES += \
@@ -48,7 +31,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonyericsson.colorextraction.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonyericsson.colorextraction.xml \
     $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.home.resourceprovider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.home.resourceprovider.xml \
     $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.xml \
-    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.internal.xml
+    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.internal.xml \
+    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.mmwdiapi.somc-mmwdiapi.xml
 
 # Controller Support
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/system/usr/keylayout)
+
+# Camera For Sagami
+PRODUCT_PACKAGES += \
+    PhotoPro \
+    CinemaPro \
+    VideoPro \
+    CameraPanorama \
+    CreativeEffect \
+    PortraitSelfie
