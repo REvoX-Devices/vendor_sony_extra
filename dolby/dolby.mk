@@ -13,8 +13,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx215-extra/dolby/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 
 # Dolby Libs
-$(call find-copy-subdir-files,*,vendor/sony/pdx215-extra/dolby/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib)
-$(call find-copy-subdir-files,*,vendor/sony/pdx215-extra/dolby/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/sony/pdx215-extra/dolby/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
+    $(call find-copy-subdir-files,*,vendor/sony/pdx215-extra/dolby/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
 
 # Dolby Apps
 PRODUCT_PACKAGES += \

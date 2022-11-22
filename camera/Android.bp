@@ -1,0 +1,76 @@
+// Automatically generated file. DO NOT MODIFY
+
+soong_namespace {
+}
+
+android_app_import {
+	name: "PhotoPro",
+	owner: "sony",
+	apk: "PhotoPro/PhotoPro.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	system_ext_specific: true,
+	privileged: true,
+}
+
+android_app_import {
+	name: "CinemaPro",
+	owner: "sony",
+	apk: "CinemaPro/CinemaPro.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	system_ext_specific: true,
+	privileged: true,
+}
+
+android_app_import {
+	name: "VideoPro",
+	owner: "sony",
+	apk: "VideoPro/VideoPro.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	system_ext_specific: true,
+	privileged: true,
+}
+
+android_app_import {
+	name: "CameraPanorama",
+	owner: "sony",
+	apk: "CameraPanorama/CameraPanorama.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	system_ext_specific: true,
+	privileged: true,
+}
+
+android_app_import {
+	name: "CreativeEffect",
+	owner: "sony",
+	apk: "CreativeEffect/CreativeEffect.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	system_ext_specific: true,
+	privileged: true,
+}
+
+android_app_import {
+	name: "PortraitSelfie",
+	owner: "sony",
+	apk: "PortraitSelfie/PortraitSelfie.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	system_ext_specific: true,
+	privileged: true,
+}

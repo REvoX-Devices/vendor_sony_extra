@@ -38,16 +38,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sonyframework/product/etc/permissions/com.sonyericsson.idd.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/com.sonyericsson.idd.xml
 
 # Dolby Atmos
-$(call inherit-product, $(LOCAL_PATH)/dolby/config.mk)
+PRODUCT_COPY_FILES += \
+    $(call inherit-product, $(LOCAL_PATH)/dolby/config.mk)
 
 # Controller Support
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
 # Camera Apps For 1 III
-PRODUCT_PACKAGES += \
-    PhotoPro \
-    CinemaPro \
-    VideoPro \
-    CameraPanorama \
-    CreativeEffect \
-    PortraitSelfie
+PRODUCT_COPY_FILES += \
+    $(call inherit-product, $(LOCAL_PATH)/camera/config.mk)

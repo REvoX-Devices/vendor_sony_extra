@@ -1,6 +1,7 @@
 # Automatically generated file. DO NOT MODIFY
 
-$(call inherit-product, vendor/sony/pdx215-extra/dolby/dolby.mk)
+PRODUCT_SOONG_NAMESPACES += \
+    $(call inherit-product, vendor/sony/pdx215-extra/dolby/dolby.mk)
 
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
