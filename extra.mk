@@ -17,34 +17,48 @@
 
 # SonyFramework
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sonyframework/framework/com.sony.device.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sony.device.jar \
-    $(LOCAL_PATH)/sonyframework/framework/com.sonyericsson.colorextraction_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonyericsson.colorextraction_impl.jar \
-    $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.album.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.jar \
-    $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.album.internal.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.internal.jar \
-    $(LOCAL_PATH)/sonyframework/framework/com.sonymobile.home.resourceprovider.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.home.resourceprovider.jar \
-    $(LOCAL_PATH)/sonyframework/framework/somc-ext-mmwdiapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/somc-ext-mmwdiapi.jar \
-    $(LOCAL_PATH)/sonyframework/product/framework/com.google.protobuf-2.3.0-dummy.jar:$(TARGET_COPY_OUT_SYSTEM)/product/framework/com.google.protobuf-2.3.0-dummy.jar \
-    $(LOCAL_PATH)/sonyframework/product/framework/com.sonyericsson.idd_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/product/framework/com.sonyericsson.idd_impl.jar
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sonyframework/framework/,$(TARGET_COPY_OUT_SYSTEM)/framework) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sonyframework/product/framework/,$(TARGET_COPY_OUT_SYSTEM)/product/framework)
 
 # SonyFramework Permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sony.device.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sony.device.xml \
-    $(LOCAL_PATH)/sonyframework/etc/permissions/privapp-permissions-sony.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-sony.xml\
-    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonyericsson.colorextraction.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonyericsson.colorextraction.xml \
-    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.home.resourceprovider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.home.resourceprovider.xml \
-    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.xml \
-    $(LOCAL_PATH)/sonyframework/etc/permissions/com.sonymobile.album.internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.internal.xml \
-    $(LOCAL_PATH)/sonyframework/product/etc/permissions/com.google.protobuf-2.3.0.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/com.google.protobuf-2.3.0.xml \
-    $(LOCAL_PATH)/sonyframework/product/etc/permissions/com.sonyericsson.idd.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/com.sonyericsson.idd.xml
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sonyframework/etc/permissions/,$(TARGET_COPY_OUT_SYSTEM)/etc/permissions) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sonyframework/product/etc/permissions/,$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions)
 
 # Dolby Atmos
 PRODUCT_COPY_FILES += \
-    $(call inherit-product, $(LOCAL_PATH)/dolby/config.mk)
+    vendor/sony/pdx215-extra/dolby/system_ext/etc/permissions/com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxappui.xml \
+    vendor/sony/pdx215-extra/dolby/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
+    vendor/sony/pdx215-extra/dolby/system_ext/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.dolby.hardware.dms@2.0.so \
+    vendor/sony/pdx215-extra/dolby/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
+    vendor/sony/pdx215-extra/dolby/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
+    vendor/sony/pdx215-extra/dolby/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/sony/pdx215-extra/dolby/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+
+# Dolby Libs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/sony/pdx215-extra/dolby/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
+    $(call find-copy-subdir-files,*,vendor/sony/pdx215-extra/dolby/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
+
+# Dolby SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(LOCAL_PATH)/dolby/sepolicy/vendor
+
+# Dolby Atmos
+PRODUCT_PACKAGES += \
+    daxUI \
+    daxService \
+    vendor.dolby.hardware.dms
 
 # Controller Support
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
-# Camera Apps For 1 III
-PRODUCT_COPY_FILES += \
-    $(call inherit-product, $(LOCAL_PATH)/camera/config.mk)
+# Camera
+ PRODUCT_PACKAGES += \
+    PhotoPro \
+    CinemaPro \
+    VideoPro \
+    CameraPanorama \
+    CreativeEffect \
+    PortraitSelfie
