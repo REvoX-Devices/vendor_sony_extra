@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),pdx215)
-include $(call all-makefiles-under,$(LOCAL_PATH))
+ifneq ($(filter pdx214 pdx215,$(TARGET_DEVICE)),)
+
 endif
