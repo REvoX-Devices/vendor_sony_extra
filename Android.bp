@@ -90,37 +90,37 @@ dex_import {
 dex_import {
 	name: "com.sony.device.jar",
 	owner: "sony",
-	jars: ["sonyframework/framework/com.sony.device.jar"],
+	jars: ["sonyframework/system/framework/com.sony.device.jar"],
 }
 
 dex_import {
 	name: "com.sonyericsson.colorextraction_impl.jar",
 	owner: "sony",
-	jars: ["sonyframework/framework/com.sonyericsson.colorextraction_impl.jar"],
+	jars: ["sonyframework/system/framework/com.sonyericsson.colorextraction_impl.jar"],
 }
 
 dex_import {
 	name: "com.sonymobile.album.jar",
 	owner: "sony",
-	jars: ["sonyframework/framework/com.sonymobile.album.jar"],
+	jars: ["sonyframework/system/framework/com.sonymobile.album.jar"],
 }
 
 dex_import {
 	name: "com.sonymobile.album.internal.jar",
 	owner: "sony",
-	jars: ["sonyframework/framework/com.sonymobile.album.internal.jar"],
+	jars: ["sonyframework/system/framework/com.sonymobile.album.internal.jar"],
 }
 
 dex_import {
 	name: "com.sonymobile.home.resourceprovider.jar",
 	owner: "sony",
-	jars: ["sonyframework/framework/com.sonymobile.home.resourceprovider.jar"],
+	jars: ["sonyframework/system/framework/com.sonymobile.home.resourceprovider.jar"],
 }
 
 dex_import {
 	name: "somc-ext-mmwdiapi.jar",
 	owner: "sony",
-	jars: ["sonyframework/framework/somc-ext-mmwdiapi.jar"],
+	jars: ["sonyframework/system/framework/somc-ext-mmwdiapi.jar"],
 }
 
 android_app_import {
