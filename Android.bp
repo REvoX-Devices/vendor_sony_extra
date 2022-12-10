@@ -158,3 +158,99 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
+
+cc_prebuilt_binary {
+	name: "alsacap",
+	owner: "sony",
+	srcs: ["extra/sonyhires/audio/bin/alsacap"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "alsactl",
+	owner: "sony",
+	srcs: ["extra/sonyhires/audio/bin/alsactl"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "alsaucm",
+	owner: "sony",
+	srcs: ["extra/sonyhires/audio/bin/alsaucm"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "amixer",
+	owner: "sony",
+	srcs: ["extra/sonyhires/audio/bin/amixer"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "aplay",
+	owner: "sony",
+	srcs: ["extra/sonyhires/audio/bin/aplay"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "arecord",
+	owner: "sony",
+	srcs: ["extra/sonyhires/audio/bin/arecord"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "check",
+	owner: "sony",
+	srcs: ["extra/sonyhires/audio/bin/check"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "cmixer",
+	owner: "sony",
+	srcs: ["extra/sonyhires/audio/bin/cmixer"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
