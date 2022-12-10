@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
    check \
    cmixer
 
+# Init
+PRODUCT_PACKAGES += \
+   init.sony.hires.rc
+
 # System configuration files
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/extra/sonyhires/audio/etc/asound.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/asound.conf \
