@@ -1,0 +1,7 @@
+on boot
+    start vendor.sonyhires
+
+service vendor.sonyhires /vendor/bin/sonyhires.sh
+    class main
+    user system
+    group system audio

@@ -1,0 +1,6 @@
+prebuilt_etc {
+    name: "init.sony.hires.rc",
+    src: "etc/init.sony.hires.rc",
+    relative_install_path: "init",
+    vendor: false,
+}
