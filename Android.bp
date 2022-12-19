@@ -4,7 +4,7 @@ soong_namespace {
 android_app_import {
 	name: "PhotoPro",
 	owner: "sony",
-	apk: "camera/PhotoPro/PhotoPro.apk",
+	apk: "extra/camera/PhotoPro/PhotoPro.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -16,7 +16,7 @@ android_app_import {
 android_app_import {
 	name: "CinemaPro",
 	owner: "sony",
-	apk: "camera/CinemaPro/CinemaPro.apk",
+	apk: "extra/camera/CinemaPro/CinemaPro.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -28,7 +28,7 @@ android_app_import {
 android_app_import {
 	name: "VideoPro",
 	owner: "sony",
-	apk: "camera/VideoPro/VideoPro.apk",
+	apk: "extra/camera/VideoPro/VideoPro.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -40,7 +40,7 @@ android_app_import {
 android_app_import {
 	name: "CreativeEffect",
 	owner: "sony",
-	apk: "camera/CreativeEffect/CreativeEffect.apk",
+	apk: "extra/camera/CreativeEffect/CreativeEffect.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -52,7 +52,7 @@ android_app_import {
 android_app_import {
 	name: "CameraPanorama",
 	owner: "sony",
-	apk: "camera/CameraPanorama/CameraPanorama.apk",
+	apk: "extra/camera/CameraPanorama/CameraPanorama.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -64,7 +64,7 @@ android_app_import {
 android_app_import {
 	name: "PortraitSelfie",
 	owner: "sony",
-	apk: "camera/PortraitSelfie/PortraitSelfie.apk",
+	apk: "extra/camera/PortraitSelfie/PortraitSelfie.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
