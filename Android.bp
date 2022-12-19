@@ -4,7 +4,7 @@ soong_namespace {
 android_app_import {
 	name: "PhotoPro",
 	owner: "sony",
-	apk: "camera/PhotoPro/PhotoPro.apk",
+	apk: "extra/camera/PhotoPro/PhotoPro.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -16,7 +16,7 @@ android_app_import {
 android_app_import {
 	name: "CinemaPro",
 	owner: "sony",
-	apk: "camera/CinemaPro/CinemaPro.apk",
+	apk: "extra/camera/CinemaPro/CinemaPro.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -28,7 +28,7 @@ android_app_import {
 android_app_import {
 	name: "VideoPro",
 	owner: "sony",
-	apk: "camera/VideoPro/VideoPro.apk",
+	apk: "extra/camera/VideoPro/VideoPro.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -40,7 +40,7 @@ android_app_import {
 android_app_import {
 	name: "CreativeEffect",
 	owner: "sony",
-	apk: "camera/CreativeEffect/CreativeEffect.apk",
+	apk: "extra/camera/CreativeEffect/CreativeEffect.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -52,7 +52,7 @@ android_app_import {
 android_app_import {
 	name: "CameraPanorama",
 	owner: "sony",
-	apk: "camera/CameraPanorama/CameraPanorama.apk",
+	apk: "extra/camera/CameraPanorama/CameraPanorama.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -64,7 +64,7 @@ android_app_import {
 android_app_import {
 	name: "PortraitSelfie",
 	owner: "sony",
-	apk: "camera/PortraitSelfie/PortraitSelfie.apk",
+	apk: "extra/camera/PortraitSelfie/PortraitSelfie.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -76,57 +76,57 @@ android_app_import {
 dex_import {
 	name: "com.google.protobuf-2.3.0-dummy.jar",
 	owner: "sony",
-	jars: ["sonyframework/product/framework/com.google.protobuf-2.3.0-dummy.jar"],
+	jars: ["extra/sonyframework/product/framework/com.google.protobuf-2.3.0-dummy.jar"],
 	product_specific: true,
 }
 
 dex_import {
 	name: "com.sonyericsson.idd_impl.jar",
 	owner: "sony",
-	jars: ["sonyframework/product/framework/com.sonyericsson.idd_impl.jar"],
+	jars: ["extra/sonyframework/product/framework/com.sonyericsson.idd_impl.jar"],
 	product_specific: true,
 }
 
 dex_import {
 	name: "com.sony.device.jar",
 	owner: "sony",
-	jars: ["sonyframework/system/framework/com.sony.device.jar"],
+	jars: ["extra/sonyframework/system/framework/com.sony.device.jar"],
 }
 
 dex_import {
 	name: "com.sonyericsson.colorextraction_impl.jar",
 	owner: "sony",
-	jars: ["sonyframework/system/framework/com.sonyericsson.colorextraction_impl.jar"],
+	jars: ["extra/sonyframework/system/framework/com.sonyericsson.colorextraction_impl.jar"],
 }
 
 dex_import {
 	name: "com.sonymobile.album.jar",
 	owner: "sony",
-	jars: ["sonyframework/system/framework/com.sonymobile.album.jar"],
+	jars: ["extra/sonyframework/system/framework/com.sonymobile.album.jar"],
 }
 
 dex_import {
 	name: "com.sonymobile.album.internal.jar",
 	owner: "sony",
-	jars: ["sonyframework/system/framework/com.sonymobile.album.internal.jar"],
+	jars: ["extra/sonyframework/system/framework/com.sonymobile.album.internal.jar"],
 }
 
 dex_import {
 	name: "com.sonymobile.home.resourceprovider.jar",
 	owner: "sony",
-	jars: ["sonyframework/system/framework/com.sonymobile.home.resourceprovider.jar"],
+	jars: ["extra/sonyframework/system/framework/com.sonymobile.home.resourceprovider.jar"],
 }
 
 dex_import {
 	name: "somc-ext-mmwdiapi.jar",
 	owner: "sony",
-	jars: ["sonyframework/system/framework/somc-ext-mmwdiapi.jar"],
+	jars: ["extra/sonyframework/system/framework/somc-ext-mmwdiapi.jar"],
 }
 
 android_app_import {
 	name: "daxUI",
 	owner: "sony",
-	apk: "dolby/system_ext/priv-app/daxUI/daxUI.apk",
+	apk: "extra/dolby/system_ext/priv-app/daxUI/daxUI.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: true,
@@ -141,7 +141,7 @@ android_app_import {
 android_app_import {
 	name: "daxService",
 	owner: "sony",
-	apk: "dolby/system_ext/priv-app/daxService/daxService.apk",
+	apk: "extra/dolby/system_ext/priv-app/daxService/daxService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -153,104 +153,8 @@ android_app_import {
 prebuilt_etc_xml {
 	name: "vendor.dolby.hardware.dms",
 	owner: "sony",
-	src: "dolby/vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml",
+	src: "extra/dolby/vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "alsacap",
-	owner: "sony",
-	srcs: ["extra/sonyhires/audio/bin/alsacap"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "alsactl",
-	owner: "sony",
-	srcs: ["extra/sonyhires/audio/bin/alsactl"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "alsaucm",
-	owner: "sony",
-	srcs: ["extra/sonyhires/audio/bin/alsaucm"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "amixer",
-	owner: "sony",
-	srcs: ["extra/sonyhires/audio/bin/amixer"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "aplay",
-	owner: "sony",
-	srcs: ["extra/sonyhires/audio/bin/aplay"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "arecord",
-	owner: "sony",
-	srcs: ["extra/sonyhires/audio/bin/arecord"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "check",
-	owner: "sony",
-	srcs: ["extra/sonyhires/audio/bin/check"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "cmixer",
-	owner: "sony",
-	srcs: ["extra/sonyhires/audio/bin/cmixer"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
 	soc_specific: true,
 }
