@@ -4,7 +4,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # SonyFramework
  PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/product/,$(TARGET_COPY_OUT_SYSTEM)/product/)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
 
 # Camera
  PRODUCT_PACKAGES += \
@@ -16,12 +16,12 @@ PRODUCT_SOONG_NAMESPACES += \
     PortraitSelfie
 
 # SonyHiRes
- PRODUCT_COPY_FILES += \
+ BUILD_PREBIILT += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyhires/audio/,$(TARGET_COPY_OUT_SYSTEM)/) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyhires/upscaling/,$(TARGET_COPY_OUT_SYSTEM)/)
 
 # SonyHiRes Props
-  PRODUCT_SYSTEM_PROPERTIES +=
+  PRODUCT_SYSTEM_PROPERTIES += \
     mm.enable.qcom_parser=13211837 \
     persist.mm.enable.prefetch=true \
     sony.ahc.supported=yes \
