@@ -188,3 +188,47 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
+
+android_app_import {
+	name: "MobileFeliCaClient",
+	owner: "sony",
+	apk: "extra/felica/product/MobileFeliCaClient/MobileFeliCaClient.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "MobileFeliCaMenuMainApp",
+	owner: "sony",
+	apk: "extra/felica/product/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "MobileFeliCaSettingApp",
+	owner: "sony",
+	apk: "extra/felica/product/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "MobileFeliCaWebPluginBoot",
+	owner: "sony",
+	apk: "extra/felica/product/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+}

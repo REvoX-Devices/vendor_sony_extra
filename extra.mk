@@ -103,3 +103,14 @@ PRODUCT_PACKAGES += \
 # Controller Support
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/keylayout/, $(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
+
+# Felica
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/extra/felica/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
+    $(LOCAL_PATH)/extra/felica/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
+    $(LOCAL_PATH)/extra/felica/vendor/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/common.cfg \
+    $(LOCAL_PATH)/extra/felica/vendor/felica/mfm.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/mfm.cfg \
+    $(LOCAL_PATH)/extra/felica/vendor/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/mfs.cfg \
+    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nci.conf \
+    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp.conf \
+    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
