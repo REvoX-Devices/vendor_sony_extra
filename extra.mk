@@ -9,12 +9,13 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    PhotoPro \
-    CinemaPro \
-    VideoPro \
     CameraPanorama \
+    CinemaPro \
     CreativeEffect \
-    PortraitSelfie
+    PhotoPro \
+    PortraitSelfie \
+    SemcMusic \
+    VideoPro
 
 # SonyHiRes
 BUILD_PREBIILT += \
