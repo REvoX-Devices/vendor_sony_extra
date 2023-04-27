@@ -126,7 +126,7 @@ dex_import {
 dex_import {
 	name: "dolby_dax.jar",
 	owner: "sony",
-	jars: ["extra/dolby/system_ext/framework/dolby_dax.jar"],
+	jars: ["extra/sonyframework/system_ext/framework/dolby_dax.jar"],
 }
 
 android_app_import {
