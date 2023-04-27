@@ -77,7 +77,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.sonyericsson.idd.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonyericsson.idd.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxservice.xmll:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
+    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
     $(LOCAL_PATH)/extra/dolby/system_ext/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.dolby.hardware.dms@2.0.so \
     $(LOCAL_PATH)/extra/dolby/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
     $(LOCAL_PATH)/extra/dolby/vendor/etc/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dax-default.xml \
