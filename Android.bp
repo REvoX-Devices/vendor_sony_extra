@@ -123,6 +123,12 @@ dex_import {
 	jars: ["extra/sonyframework/system/framework/somc-ext-mmwdiapi.jar"],
 }
 
+dex_import {
+	name: "dolby_dax.jar",
+	owner: "sony",
+	jars: ["extra/dolby/system_ext/framework/dolby_dax.jar"],
+}
+
 android_app_import {
 	name: "daxUI",
 	owner: "sony",
