@@ -105,6 +105,12 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/keylayout/, $(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
 # Felica
+PRODUCT_PACKAGES += \
+    MobileFeliCaClient \
+    MobileFeliCaMenuMainApp \
+    MobileFeliCaSettingApp \
+    MobileFeliCaWebPluginBoot
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/extra/felica/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
     $(LOCAL_PATH)/extra/felica/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
