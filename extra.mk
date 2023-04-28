@@ -77,38 +77,13 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.sonyericsson.idd.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonyericsson.idd.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.sonymobile.getmore.api.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonymobile.getmore.api.xml \
     $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.sonyericsson.soundenhancement.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.sonyericsson.soundenhancement.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.sonymobile.audioutil.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.sonymobile.audioutil.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/semc_audioeffectif.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/semc_audioeffectif.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/sonyaudioeffect.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/sonyaudioeffect.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/lib/libaudio-resampler.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libaudio-resampler.so \
-    $(LOCAL_PATH)/extra/dolby/system_ext/lib/libhscomp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libhscomp.so \
-    $(LOCAL_PATH)/extra/dolby/system_ext/lib/libhscomp_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libhscomp_jni.so \
-    $(LOCAL_PATH)/extra/dolby/system_ext/lib64/libaudio-resampler.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaudio-resampler.so \
-    $(LOCAL_PATH)/extra/dolby/system_ext/lib64/libhscomp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libhscomp.so \
-    $(LOCAL_PATH)/extra/dolby/system_ext/lib64/libhscomp_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libhscomp_jni.so \
     $(LOCAL_PATH)/extra/dolby/system_ext/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.dolby.hardware.dms@2.0.so \
     $(LOCAL_PATH)/extra/dolby/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
     $(LOCAL_PATH)/extra/dolby/vendor/etc/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dax-default.xml \
-    $(LOCAL_PATH)/extra/dolby/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
-    $(LOCAL_PATH)/extra/dolby/vendor/etc/media_codecs_somc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_somc.xml \
     $(LOCAL_PATH)/extra/dolby/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     $(LOCAL_PATH)/extra/dolby/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDecSw.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib/libsonydseehxwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsonydseehxwrapper.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib/libstagefright_soft_somcalacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_somcalacdec.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libeffectproxy.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib/soundfx/libsonypostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libsonypostprocbundle.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib/soundfx/libsonysweffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libsonysweffect.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/media_codecs_dolby_audio.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib64/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libOmxAlacDec.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib64/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libOmxAlacDecSw.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/lib64/libsonydseehxwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libsonydseehxwrapper.so
-
+    $(LOCAL_PATH)/extra/dolby/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
 
 # Dolby Libs
 PRODUCT_COPY_FILES += \
@@ -117,11 +92,7 @@ PRODUCT_COPY_FILES += \
 
 # Dolby SEPolicy
 # BOARD_VENDOR_SEPOLICY_DIRS += \
-#     $(LOCAL_PATH)/extra/dolby/sepolicy/vendor
-
-# vintf/manifest
-DEVICE_MANIFEST_FILE += \
-    $(LOCAL_PATH)/extra/dolby/vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
+#    $(LOCAL_PATH)/extra/dolby/sepolicy/vendor
 
 # Dolby Atmos
 PRODUCT_PACKAGES += \
@@ -148,4 +119,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/extra/felica/vendor/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/mfs.cfg \
     $(LOCAL_PATH)/extra/felica/vendor/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nci.conf \
     $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp.conf \
-    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
+    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
