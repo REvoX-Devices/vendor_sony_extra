@@ -98,6 +98,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 #PRODUCT_PACKAGES += \
 #    daxUI \
 #    daxService \
+#    SoundEnhancement \
 #    vendor.dolby.hardware.dms
 
 # Controller Support
