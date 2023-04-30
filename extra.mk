@@ -3,9 +3,9 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # SonyFramework
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/sonyframework/system/, $(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/sonyframework/system_ext/, $(TARGET_COPY_OUT_SYSTEM_EXT)/) \
-    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/sonyframework/product/, $(TARGET_COPY_OUT_PRODUCT)/)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/system_ext/,$(TARGET_COPY_OUT_SYSTEM_EXT)/) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -19,8 +19,8 @@ PRODUCT_PACKAGES += \
 
 # SonyHiRes
 BUILD_PREBIILT += \
-    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/sonyhires/audio/, $(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/sonyhires/upscaling/, $(TARGET_COPY_OUT_SYSTEM)/)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyhires/audio/,$(TARGET_COPY_OUT_SYSTEM)/) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyhires/upscaling/,$(TARGET_COPY_OUT_SYSTEM)/)
 
 # SonyHiRes Props
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -87,8 +87,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Dolby Libs
 #PRODUCT_COPY_FILES += \
-#    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/dolby/vendor/lib/, $(TARGET_COPY_OUT_VENDOR)/lib) \
-#    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/dolby/vendor/lib64/, $(TARGET_COPY_OUT_VENDOR)/lib64)
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
 
 # Dolby SEPolicy
 # BOARD_VENDOR_SEPOLICY_DIRS += \
@@ -102,7 +102,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Controller Support
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/keylayout/, $(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
 # Felica
 #PRODUCT_PACKAGES += \
