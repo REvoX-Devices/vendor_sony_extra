@@ -74,49 +74,49 @@ PRODUCT_SYSTEM_PROPERTIES += \
     fm.a2dp.conc.disabled=true
 
 # Dolby
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.sonyericsson.idd.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonyericsson.idd.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.dolby.hardware.dms@2.0.so \
-    $(LOCAL_PATH)/extra/dolby/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
-    $(LOCAL_PATH)/extra/dolby/vendor/etc/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dax-default.xml \
-    $(LOCAL_PATH)/extra/dolby/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    $(LOCAL_PATH)/extra/dolby/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
-    $(LOCAL_PATH)/extra/dolby/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/com.sonyericsson.idd.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonyericsson.idd.xml \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.dolby.hardware.dms@2.0.so \
+#    $(LOCAL_PATH)/extra/dolby/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
+#    $(LOCAL_PATH)/extra/dolby/vendor/etc/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dax-default.xml \
+#    $(LOCAL_PATH)/extra/dolby/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+#    $(LOCAL_PATH)/extra/dolby/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
+#    $(LOCAL_PATH)/extra/dolby/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
 
 # Dolby Libs
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/dolby/vendor/lib/, $(TARGET_COPY_OUT_VENDOR)/lib) \
-    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/dolby/vendor/lib64/, $(TARGET_COPY_OUT_VENDOR)/lib64)
+#PRODUCT_COPY_FILES += \
+#    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/dolby/vendor/lib/, $(TARGET_COPY_OUT_VENDOR)/lib) \
+#    $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/dolby/vendor/lib64/, $(TARGET_COPY_OUT_VENDOR)/lib64)
 
 # Dolby SEPolicy
 # BOARD_VENDOR_SEPOLICY_DIRS += \
 #    $(LOCAL_PATH)/extra/dolby/sepolicy/vendor
 
 # Dolby Atmos
-PRODUCT_PACKAGES += \
-    daxUI \
-    daxService \
-    vendor.dolby.hardware.dms
+#PRODUCT_PACKAGES += \
+#    daxUI \
+#    daxService \
+#    vendor.dolby.hardware.dms
 
 # Controller Support
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files, *, $(LOCAL_PATH)/extra/keylayout/, $(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
 # Felica
-PRODUCT_PACKAGES += \
-    MobileFeliCaClient \
-    MobileFeliCaMenuMainApp \
-    MobileFeliCaSettingApp \
-    MobileFeliCaWebPluginBoot
+#PRODUCT_PACKAGES += \
+#    MobileFeliCaClient \
+#    MobileFeliCaMenuMainApp \
+#    MobileFeliCaSettingApp \
+#    MobileFeliCaWebPluginBoot
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/extra/felica/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
-    $(LOCAL_PATH)/extra/felica/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
-    $(LOCAL_PATH)/extra/felica/vendor/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/common.cfg \
-    $(LOCAL_PATH)/extra/felica/vendor/felica/mfm.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/mfm.cfg \
-    $(LOCAL_PATH)/extra/felica/vendor/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/mfs.cfg \
-    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nci.conf \
-    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp.conf \
-    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/extra/felica/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
+#    $(LOCAL_PATH)/extra/felica/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
+#    $(LOCAL_PATH)/extra/felica/vendor/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/common.cfg \
+#    $(LOCAL_PATH)/extra/felica/vendor/felica/mfm.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/mfm.cfg \
+#    $(LOCAL_PATH)/extra/felica/vendor/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/felica/mfs.cfg \
+#    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nci.conf \
+#    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp.conf \
+#    $(LOCAL_PATH)/extra/felica/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
