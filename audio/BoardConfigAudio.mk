@@ -12,7 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
+
 AUDIO_PATH := vendor/sony/extra/audio
 
 # SEPolicy
@@ -20,14 +20,10 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(AUDIO_PATH)/sepolicy/vendor
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(AUDIO_PATH)/configs/vintf/dolby_framework_matrix.xml
-
-DEVICE_MANIFEST_FILE += \
-    $(AUDIO_PATH)/configs/vintf/vendor.dolby.media.c2.xml \
-    $(AUDIO_PATH)/configs/vintf/vendor.dolby.hardware.dms.xml
+    $(AUDIO_PATH)/vintf/framework_compatibility_matrix.xml
 
 # Audio HAL Flags
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 # inherit from the proprietary version
--include vendor/sony/extra/audio/BoardConfigVendor.mk
+-include vendor/sony/extra/audio/blobs/BoardConfigVendor.mk
