@@ -1,0 +1,7 @@
+runtime_resource_overlay {
+    name: "XperiaSignalSony",
+    product_specific: true,
+    sdk_version: "current",
+    theme: "XperiaSignalSony",
+    overrides: ["XperiaSignalOverlay"],
+}

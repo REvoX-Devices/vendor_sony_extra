@@ -1,0 +1,3 @@
+// Xperia status bar icon themes (replace the vendor/extras ones of the same name)
+soong_namespace {
+}

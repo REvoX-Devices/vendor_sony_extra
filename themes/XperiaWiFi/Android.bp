@@ -1,0 +1,7 @@
+runtime_resource_overlay {
+    name: "XperiaWiFiSony",
+    product_specific: true,
+    sdk_version: "current",
+    theme: "XperiaWiFiSony",
+    overrides: ["XperiaWiFiOverlay"],
+}
